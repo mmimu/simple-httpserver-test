@@ -53,8 +53,8 @@ public class SkyWalkingTestController {
             return submit.get();*/
             final String[] result = {""};
              executorService.execute(() -> {
-                String url = "http://localhost:9093/rpc3/info.do?serial=%s";
-                result[0] = SimpleHttpClient.get(String.format(url, convert.getSerial()));
+                /*String url = "http://localhost:9093/rpc3/info.do?serial=%s";*/
+                result[0] = "lalalla";
             });
             Thread.sleep(200);
             return result[0];
